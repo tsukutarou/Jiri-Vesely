@@ -2,7 +2,7 @@
 
 Jiri Vesely is a Czech professional tennis player.
 
-<div style="width:30%;height:auto;"><img src="./images/vesely_full_ao18.png"></div>
+<div style="width:50%;height:auto;"><img src="./images/vesely_full_ao18.png"></div>
 
 ATP Ranking: **123** (2021/02/21)
 
