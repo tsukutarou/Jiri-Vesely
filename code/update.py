@@ -34,10 +34,10 @@ def update():
       ranking = [td for td in soup.find_all("td") if len(td.find_all("div",text=re.compile('Rank')))!=0][0]
       singles = ranking.find_all("div")[0].get("data-singles")
       doubles = ranking.find_all("div")[0].get("data-doubles")
-      print(singles,doubles)
+      #print(singles,doubles)
 
       RankDate = ([h2.string.replace(' ','').replace('\n','') for h2 in soup.find_all("h2",attrs = {"class":"module-title"}) if "As" in h2.string][0])[-10:]
-      print(RankDate)
+      #print(RankDate)
 
       CH = [td for td in soup.find_all("td",attrs={"colspan":"2"}) if len(td.find_all("div",text=re.compile("Career")))!=0][0]
       singlesCH = CH.find_all("div")[0].get("data-singles")
@@ -46,8 +46,8 @@ def update():
       singlesCHdate = CH.find_all("div")[1].get("data-singles-label")[-10:]
       doublesCHdate = CH.find_all("div")[1].get("data-doubles-label")[-10:]
 
-      print(singlesCH,singlesCHdate)
-      print(doublesCH,doublesCHdate)
+      #print(singlesCH,singlesCHdate)
+      #print(doublesCH,doublesCHdate)
 
       PageContents = f"""# Jiri-Vesely
 
@@ -67,9 +67,9 @@ Doubles: **{doubles}** ({RankDate})
 
 ### Career High
 
-Singles: **{singlesCH}** ({singlesCHdate})
+Singles: **<span style='color: #ff0000;'>{singlesCH}</span>** ({singlesCHdate})
 
-Doubles: **{doublesCH}** ({doublesCHdate})
+Doubles: **<span style='color: #ff0000;'>{doublesCH}</span>** ({doublesCHdate})
 
 ## Information
 

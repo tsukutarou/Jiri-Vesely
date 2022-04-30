@@ -16,9 +16,9 @@ Doubles: **358** (2022.04.25)
 
 ### Career High
 
-Singles: **35** (2015.04.27)
+Singles: **<span style='color: #ff0000;'>35</span>** (2015.04.27)
 
-Doubles: **94** (2015.06.08)
+Doubles: **<span style='color: #ff0000;'>94</span>** (2015.06.08)
 
 ## Information
 
