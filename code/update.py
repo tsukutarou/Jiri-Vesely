@@ -89,7 +89,7 @@ Instagram: <a href="https://www.instagram.com/veselyjiri/">@veselyjiri</a>
 This is unofficial page. 
 """
 
-      with open("../README.md","w",encoding="UTF-8") as f:
+      with open("../docs/README.md","w",encoding="UTF-8") as f:
            f.write(PageContents)
 
 if __name__=="__main__":
