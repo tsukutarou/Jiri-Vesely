@@ -2,7 +2,6 @@ name: Jiri-Vesely_Update
 
 on:
    schedule:
-     #- cron: '0 0 * * 1'
      -cron '31 * * * *'
    workflow_dispatch:
 
