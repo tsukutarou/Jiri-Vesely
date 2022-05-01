@@ -24,7 +24,7 @@ jobs:
            github_token: ${{ secrets.GITHUB_TOKEN }}
            publish_branch: gh-pages
            publish_dir: ./docs
-           enable_jekyll: false
+           enable_jekyll: true
        - uses: actions/checkout@v3
          with:
            ref: gh-pages
