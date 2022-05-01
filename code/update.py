@@ -2,8 +2,13 @@ import os
 import re
 import time
 
+from get_chrome_driver import GetChromeDriver
 from selenium import webdriver
 from bs4 import BeautifulSoup
+
+
+get_driver = GetChromeDriver()
+get_driver.install()
 
 
 def update():
@@ -18,7 +23,7 @@ def update():
       options.add_experimental_option('excludeSwitches', ['enable-logging'])
       options.add_argument('--headless')
       options.add_argument('user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36')
-      driver = webdriver.Chrome('..\\chromedriver',options=options) 
+      driver = webdriver.Chrome(options=options) 
       
       try:
            #URL読み込み
