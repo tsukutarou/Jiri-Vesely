@@ -31,3 +31,4 @@ jobs:
            ls
            rm ".nojekyll"
            ls
+           git push origin gh-pages
