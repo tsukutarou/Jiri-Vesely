@@ -28,6 +28,6 @@ jobs:
          with:
            ref: gh-pages
        - run: |
-         ls
-         rm ".nojekyll"
-         ls
+           ls
+           rm ".nojekyll"
+           ls
