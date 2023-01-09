@@ -10,9 +10,9 @@ Jiri Vesely is a Czech professional tennis player.
 
 ### Current Ranking
 
-Singles: **109** (2023.01.02)
+Singles: **107** (2023.01.09)
 
-Doubles: **680** (2023.01.02)
+Doubles: **674** (2023.01.09)
 
 ### Career High
 
